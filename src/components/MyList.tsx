@@ -84,8 +84,8 @@ const MyList = () => {
       renderItem={renderItem}
       contentContainerStyle={{ gap: 10 }}
       columnWrapperStyle={{ gap: 5 }}
-      // onEndReached={() => fetchPage(nextPage)}
-      // onEndReachedThreshold={5}
+      onEndReached={() => fetchPage(nextPage)}
+      onEndReachedThreshold={5}
       ListFooterComponent={() => loading && <ActivityIndicator />}
       refreshing={loading}
       onRefresh={onRefresh}
