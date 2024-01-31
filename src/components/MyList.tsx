@@ -89,7 +89,7 @@ const MyList = () => {
       ListFooterComponent={() => loading && <ActivityIndicator />}
       refreshing={loading}
       onRefresh={onRefresh}
-      // debug
+      debug
       // removeClippedSubviews={true}
       initialNumToRender={3}
       getItemLayout={(data, index) => ({
