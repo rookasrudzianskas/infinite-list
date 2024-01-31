@@ -97,7 +97,7 @@ const MyList = () => {
       //   offset: (itemHeight + 5) * index,
       //   index,
       // })}
-      // viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
+      viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
       numColumns={2}
     />
   );
