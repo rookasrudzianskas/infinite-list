@@ -86,9 +86,9 @@ const MyList = () => {
       columnWrapperStyle={{ gap: 5 }}
       // onEndReached={() => fetchPage(nextPage)}
       // onEndReachedThreshold={5}
-      // ListFooterComponent={() => loading && <ActivityIndicator />}
-      // refreshing={loading}
-      // onRefresh={onRefresh}
+      ListFooterComponent={() => loading && <ActivityIndicator />}
+      refreshing={loading}
+      onRefresh={onRefresh}
       // debug
       // // removeClippedSubviews={true}
       // initialNumToRender={3}
