@@ -90,13 +90,13 @@ const MyList = () => {
       refreshing={loading}
       onRefresh={onRefresh}
       // debug
-      // // removeClippedSubviews={true}
-      // initialNumToRender={3}
-      // getItemLayout={(data, index) => ({
-      //   length: itemHeight,
-      //   offset: (itemHeight + 5) * index,
-      //   index,
-      // })}
+      // removeClippedSubviews={true}
+      initialNumToRender={3}
+      getItemLayout={(data, index) => ({
+        length: itemHeight,
+        offset: (itemHeight + 5) * index,
+        index,
+      })}
       viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
       numColumns={2}
     />
