@@ -84,20 +84,20 @@ const MyList = () => {
       renderItem={renderItem}
       contentContainerStyle={{ gap: 10 }}
       columnWrapperStyle={{ gap: 5 }}
-      onEndReached={() => fetchPage(nextPage)}
-      onEndReachedThreshold={5}
-      ListFooterComponent={() => loading && <ActivityIndicator />}
-      refreshing={loading}
-      onRefresh={onRefresh}
-      debug
-      // removeClippedSubviews={true}
-      initialNumToRender={3}
-      getItemLayout={(data, index) => ({
-        length: itemHeight,
-        offset: (itemHeight + 5) * index,
-        index,
-      })}
-      viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
+      // onEndReached={() => fetchPage(nextPage)}
+      // onEndReachedThreshold={5}
+      // ListFooterComponent={() => loading && <ActivityIndicator />}
+      // refreshing={loading}
+      // onRefresh={onRefresh}
+      // debug
+      // // removeClippedSubviews={true}
+      // initialNumToRender={3}
+      // getItemLayout={(data, index) => ({
+      //   length: itemHeight,
+      //   offset: (itemHeight + 5) * index,
+      //   index,
+      // })}
+      // viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
       numColumns={2}
     />
   );
